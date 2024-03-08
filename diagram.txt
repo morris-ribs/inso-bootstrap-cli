@@ -1,0 +1,167 @@
+graph LR
+%% 2024-03-04 11:08:07 - Script generated Mermaid diagram
+
+subgraph "idp" ["IdP Groups for CDF: 'cdf-bootcamp-10-test'"]
+  %% IdP objectId: ab2b1ded-ae03-4c8a-a5b1-f395a8e3ddef
+bootcamp-10-test-all-read[\"bootcamp-10-test-all-read"/]
+  %% IdP objectId: d8d91e58-e11b-4230-b92e-6849675199cd
+bootcamp-10-test-all-owner[\"bootcamp-10-test-all-owner"/]
+end
+
+
+subgraph "owner" ["'Owner' Groups"]
+  
+subgraph "node_owner" ["Node Level (Owner)"]
+  cdf:src:001:sap:owner("cdf:src:001:sap:owner")
+  cdf:src:002:opcua:owner("cdf:src:002:opcua:owner")
+  cdf:uc:001:oee:owner("cdf:uc:001:oee:owner")
+end
+
+  
+subgraph "ns_owner" ["Namespace Level (Owner)"]
+  cdf:src:all:owner["cdf:src:all:owner"]
+  cdf:uc:all:owner["cdf:uc:all:owner"]
+  cdf:all:owner["cdf:all:owner"]
+end
+
+  
+subgraph "scope_owner" ["Scopes (Owner)"]
+  src:001:sap:db__owner__raw_dbs[["src:001:sap:db"]]
+  src:001:sap:db:state__owner__raw_dbs[["src:001:sap:db:state"]]
+  src:001:sap:ds__owner__datasets>"src:001:sap:ds"]
+  src-001-sap-space__owner__spaces{{"src-001-sap-space"}}
+  src:002:opcua:db__owner__raw_dbs[["src:002:opcua:db"]]
+  src:002:opcua:db:state__owner__raw_dbs[["src:002:opcua:db:state"]]
+  src:002:opcua:ds__owner__datasets>"src:002:opcua:ds"]
+  src-002-opcua-space__owner__spaces{{"src-002-opcua-space"}}
+  src:all:db__owner__raw_dbs[["src:all:db"]]
+  src:all:db:state__owner__raw_dbs[["src:all:db:state"]]
+  src:all:ds__owner__datasets>"src:all:ds"]
+  uc:001:oee:db__owner__raw_dbs[["uc:001:oee:db"]]
+  uc:001:oee:db:state__owner__raw_dbs[["uc:001:oee:db:state"]]
+  uc:001:oee:ds__owner__datasets>"uc:001:oee:ds"]
+  uc-001-oee-space__owner__spaces{{"uc-001-oee-space"}}
+  src:001:sap:db__owner__raw_dbs[["src:001:sap:db"]]
+  src:001:sap:db:state__owner__raw_dbs[["src:001:sap:db:state"]]
+  src:002:opcua:db__owner__raw_dbs[["src:002:opcua:db"]]
+  src:002:opcua:db:state__owner__raw_dbs[["src:002:opcua:db:state"]]
+  src:001:sap:ds__owner__datasets>"src:001:sap:ds"]
+  src:002:opcua:ds__owner__datasets>"src:002:opcua:ds"]
+  src-001-sap-space__owner__spaces{{"src-001-sap-space"}}
+  src-002-opcua-space__owner__spaces{{"src-002-opcua-space"}}
+  uc:all:db__owner__raw_dbs[["uc:all:db"]]
+  uc:all:db:state__owner__raw_dbs[["uc:all:db:state"]]
+  uc:all:ds__owner__datasets>"uc:all:ds"]
+  all:db:state__owner__raw_dbs[["all:db:state"]]
+  all:db__owner__raw_dbs[["all:db"]]
+  all:ds__owner__datasets>"all:ds"]
+end
+
+end
+
+
+subgraph "read" ["'Read' Groups"]
+  
+subgraph "node_read" ["Node Level (Read)"]
+  cdf:src:001:sap:read("cdf:src:001:sap:read")
+  cdf:src:002:opcua:read("cdf:src:002:opcua:read")
+  cdf:uc:001:oee:read("cdf:uc:001:oee:read")
+end
+
+  
+subgraph "ns_read" ["Namespace Level (Read)"]
+  cdf:src:all:read["cdf:src:all:read"]
+  cdf:uc:all:read["cdf:uc:all:read"]
+  cdf:all:read["cdf:all:read"]
+end
+
+  
+subgraph "scope_read" ["Scopes (Read)"]
+  src:001:sap:db__read__raw_dbs[["src:001:sap:db"]]
+  src:001:sap:db:state__read__raw_dbs[["src:001:sap:db:state"]]
+  src:001:sap:ds__read__datasets>"src:001:sap:ds"]
+  src-001-sap-space__read__spaces{{"src-001-sap-space"}}
+  src:002:opcua:db__read__raw_dbs[["src:002:opcua:db"]]
+  src:002:opcua:db:state__read__raw_dbs[["src:002:opcua:db:state"]]
+  src:002:opcua:ds__read__datasets>"src:002:opcua:ds"]
+  src-002-opcua-space__read__spaces{{"src-002-opcua-space"}}
+  src:all:db__read__raw_dbs[["src:all:db"]]
+  src:all:db:state__read__raw_dbs[["src:all:db:state"]]
+  src:all:ds__read__datasets>"src:all:ds"]
+  uc:001:oee:db__read__raw_dbs[["uc:001:oee:db"]]
+  uc:001:oee:db:state__read__raw_dbs[["uc:001:oee:db:state"]]
+  uc:001:oee:ds__read__datasets>"uc:001:oee:ds"]
+  uc-001-oee-space__read__spaces{{"uc-001-oee-space"}}
+  uc:all:db__read__raw_dbs[["uc:all:db"]]
+  uc:all:db:state__read__raw_dbs[["uc:all:db:state"]]
+  uc:all:ds__read__datasets>"uc:all:ds"]
+  all:db:state__read__raw_dbs[["all:db:state"]]
+  all:db__read__raw_dbs[["all:db"]]
+  all:ds__read__datasets>"all:ds"]
+end
+
+end
+
+%% all 62 links connecting the above nodes
+cdf:src:all:read-.->cdf:src:001:sap:read
+cdf:src:001:sap:read-.->src:001:sap:db__read__raw_dbs
+cdf:src:001:sap:read-.->src:001:sap:db:state__read__raw_dbs
+cdf:src:001:sap:read-.->src:001:sap:ds__read__datasets
+cdf:src:001:sap:read-.->src-001-sap-space__read__spaces
+cdf:src:all:read-.->cdf:src:002:opcua:read
+cdf:src:002:opcua:read-.->src:002:opcua:db__read__raw_dbs
+cdf:src:002:opcua:read-.->src:002:opcua:db:state__read__raw_dbs
+cdf:src:002:opcua:read-.->src:002:opcua:ds__read__datasets
+cdf:src:002:opcua:read-.->src-002-opcua-space__read__spaces
+cdf:all:read-.->cdf:src:all:read
+cdf:src:all:read-.->src:all:db__read__raw_dbs
+cdf:src:all:read-.->src:all:db:state__read__raw_dbs
+cdf:src:all:read-.->src:all:ds__read__datasets
+cdf:uc:all:read-.->cdf:uc:001:oee:read
+cdf:uc:001:oee:read-.->uc:001:oee:db__read__raw_dbs
+cdf:uc:001:oee:read-.->uc:001:oee:db:state__read__raw_dbs
+cdf:uc:001:oee:read-.->uc:001:oee:ds__read__datasets
+cdf:uc:001:oee:read-.->uc-001-oee-space__read__spaces
+cdf:all:read-.->cdf:uc:all:read
+cdf:uc:all:read-.->uc:all:db__read__raw_dbs
+cdf:uc:all:read-.->uc:all:db:state__read__raw_dbs
+cdf:uc:all:read-.->uc:all:ds__read__datasets
+bootcamp-10-test-all-read-->cdf:all:read
+cdf:all:read-.->all:db:state__read__raw_dbs
+cdf:all:read-.->all:db__read__raw_dbs
+cdf:all:read-.->all:ds__read__datasets
+cdf:src:all:owner-->cdf:src:001:sap:owner
+cdf:src:001:sap:owner-->src:001:sap:db__owner__raw_dbs
+cdf:src:001:sap:owner-->src:001:sap:db:state__owner__raw_dbs
+cdf:src:001:sap:owner-->src:001:sap:ds__owner__datasets
+cdf:src:001:sap:owner-->src-001-sap-space__owner__spaces
+cdf:src:all:owner-->cdf:src:002:opcua:owner
+cdf:src:002:opcua:owner-->src:002:opcua:db__owner__raw_dbs
+cdf:src:002:opcua:owner-->src:002:opcua:db:state__owner__raw_dbs
+cdf:src:002:opcua:owner-->src:002:opcua:ds__owner__datasets
+cdf:src:002:opcua:owner-->src-002-opcua-space__owner__spaces
+cdf:all:owner-->cdf:src:all:owner
+cdf:src:all:owner-->src:all:db__owner__raw_dbs
+cdf:src:all:owner-->src:all:db:state__owner__raw_dbs
+cdf:src:all:owner-->src:all:ds__owner__datasets
+cdf:uc:all:owner-->cdf:uc:001:oee:owner
+cdf:uc:001:oee:owner-->uc:001:oee:db__owner__raw_dbs
+cdf:uc:001:oee:owner-->uc:001:oee:db:state__owner__raw_dbs
+cdf:uc:001:oee:owner-->uc:001:oee:ds__owner__datasets
+cdf:uc:001:oee:owner-->uc-001-oee-space__owner__spaces
+cdf:uc:001:oee:owner-.->src:001:sap:db__owner__raw_dbs
+cdf:uc:001:oee:owner-.->src:001:sap:db:state__owner__raw_dbs
+cdf:uc:001:oee:owner-.->src:002:opcua:db__owner__raw_dbs
+cdf:uc:001:oee:owner-.->src:002:opcua:db:state__owner__raw_dbs
+cdf:uc:001:oee:owner-.->src:001:sap:ds__owner__datasets
+cdf:uc:001:oee:owner-.->src:002:opcua:ds__owner__datasets
+cdf:uc:001:oee:owner-.->src-001-sap-space__owner__spaces
+cdf:uc:001:oee:owner-.->src-002-opcua-space__owner__spaces
+cdf:all:owner-->cdf:uc:all:owner
+cdf:uc:all:owner-->uc:all:db__owner__raw_dbs
+cdf:uc:all:owner-->uc:all:db:state__owner__raw_dbs
+cdf:uc:all:owner-->uc:all:ds__owner__datasets
+bootcamp-10-test-all-owner-->cdf:all:owner
+cdf:all:owner-->all:db:state__owner__raw_dbs
+cdf:all:owner-->all:db__owner__raw_dbs
+cdf:all:owner-->all:ds__owner__datasets
